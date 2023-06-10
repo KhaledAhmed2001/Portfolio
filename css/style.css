@@ -261,7 +261,8 @@ section{
         text-align: center;
     }
     .section-1-img img {
-    height: 450px;
+    /* height: 450px; تعديل  */
+    max-height: 350px;
     }
 
 
@@ -327,7 +328,7 @@ section{
     padding: 10px 0;
     margin: 0px;
     text-align: initial;
-    letter-spacing: 1.5px;
+    /* letter-spacing: 1.5px; تعديل */
     
 }
 .about .about-post  .row .info-about p{
@@ -342,7 +343,8 @@ section{
         padding-right: 8px;
 }
 .about .about-post .iamge-about img{
-    width: 450px;
+    /* تعديل */
+    width: 350px;
     /* border: 2px solid #eac98c; */
     border-radius: 27px;
     /* box-shadow: 5px 6px 10px 0px #f3c300; */
@@ -364,7 +366,19 @@ section{
         margin: auto;
     }
     .about .about-post .iamge-about img {
-        width: 350px;
+        /* width: 350px; تعديل */
+        max-width: 250px;
+
+    }
+    .about .about-post .info-about {
+        /* تعديل */
+        overflow: hidden;
+        padding: 10px;
+
+    }
+    .about .about-post .row .info-about p {
+        /* تعديل */
+        font-size: 16px;
     }
     
     
@@ -378,6 +392,12 @@ section{
         margin: auto;
 
     }
+    .about .about-post .iamge-about img{
+     /* تعديل */
+        width: 250px;
+
+    }
+
 }
 
 
@@ -528,8 +548,10 @@ transform: scale(1.2);
 
 
 .work .info-work img {
-    width: 300px;
-    height: 300px;
+    /* width: 300px; تعديل*/
+    max-width: 200px;
+    max-height: 200px;
+    /* height: 300px; تعديل*/
 }
 }
 
