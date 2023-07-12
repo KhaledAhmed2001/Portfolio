@@ -8,6 +8,8 @@
     list-style: none;
     scroll-behavior:smooth;
     /* box-shadow: 0; */
+    /* background: #000; */
+
    
 }
 .row{
@@ -39,10 +41,10 @@ header{
     position: fixed;
     width: -webkit-fill-available;
     border: solid 2px #ffffff08;
-    z-index: 50;
+    z-index: 5000;
     background: #000;
     color: #fff;
-    position: absolute;
+    position: fixed;
 }
 header .logo a h2{
     font-size: 30px;
@@ -82,7 +84,7 @@ header .navlink .checkbtn{
 
 @media (max-width: 767px) {
     header{
-        width: 98.8%;
+        /* width: 98.8%; */
         position: initial;
         padding: 10px 0;
         
@@ -155,6 +157,7 @@ section{
 
     
 }
+
 .section-1 p{
     color: wheat;
     padding: 10px;
@@ -166,6 +169,8 @@ section{
     align-content: center;
     justify-content:space-around;
     align-items: center;
+    /* margin: 10px 0; */
+
     
 } 
 .section-1-post{
@@ -226,7 +231,8 @@ section{
       
     }
     .section-1-img img{
-        padding-top: 40px; ;
+        padding-top: 40px;
+        width: 25rem;
         
     }
   @keyframes backInR {
@@ -247,8 +253,11 @@ section{
 
 @media (max-width: 767px) {
     .section-1{
-        flex-direction: column;
+        flex-direction: column-reverse;
         flex-wrap: wrap;
+    }
+    .section-1-post {
+        text-align: center;
     }
  
     .section-1-post h3 {
@@ -262,7 +271,8 @@ section{
     }
     .section-1-img img {
     /* height: 450px; تعديل  */
-    max-height: 350px;
+    /* max-height: 350px; */
+    width: 19rem;
     }
 
 
@@ -486,6 +496,7 @@ section{
     width: 33%;
     overflow: hidden;
     border-radius: 20px;
+    
 }
 .work .info-work img{
     width: 450px;
@@ -503,7 +514,7 @@ section{
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s;
-        display: flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -516,9 +527,10 @@ section{
 .work .info-work:hover .work-post {
     visibility: visible;
     opacity: 0.6;
+    
 }
 .work .info-work .work-post:hover{
-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .work .info-work .work-post .work-icon{
     text-align: center;
@@ -537,12 +549,13 @@ transform: scale(1.2);
     color: #787878;
 }
 
+
 @media (max-width: 767px)  {
     .work {
     flex-wrap: wrap;
     }
     .work .info-work {
-    width: 100%;
+    width: fit-content;
     text-align: center;
     }
 
